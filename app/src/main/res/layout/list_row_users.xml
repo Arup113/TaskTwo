@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/ripple"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="@dimen/spacing_4dp"
+    card_view:cardElevation="@dimen/spacing_4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_5dp">
+
+        <ImageView
+            android:id="@+id/list_row_users_iv_profile_image"
+            android:layout_width="@dimen/spacing_70dp"
+            android:layout_height="@dimen/spacing_70dp"
+            android:elevation="@dimen/spacing_5dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/list_row_users_tv_first_name"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/spacing_15dp"
+            android:layout_marginStart="@dimen/spacing_15dp"
+            android:layout_toEndOf="@+id/list_row_users_iv_profile_image"
+            android:layout_toRightOf="@+id/list_row_users_iv_profile_image"
+            android:drawableLeft="@drawable/account"
+            android:text="@string/first_name"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_row_users_tv_last_name"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/list_row_users_tv_first_name"
+            android:layout_alignStart="@+id/list_row_users_tv_first_name"
+            android:layout_below="@+id/list_row_users_tv_first_name"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="@dimen/spacing_5dp"
+            android:paddingBottom="@dimen/spacing_2dp"
+            android:paddingTop="@dimen/spacing_2dp"
+            android:text="@string/last_name"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/list_row_users_tv_mobile_no"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/list_row_users_tv_last_name"
+            android:layout_alignStart="@+id/list_row_users_tv_last_name"
+            android:layout_below="@+id/list_row_users_tv_last_name"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="@dimen/spacing_5dp"
+            android:paddingBottom="@dimen/spacing_5dp"
+            android:text="@string/mobile_number"
+            android:textColor="@color/colorText" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
